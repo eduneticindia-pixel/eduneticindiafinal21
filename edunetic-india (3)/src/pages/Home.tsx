@@ -78,10 +78,18 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-start gap-4">
               <Link 
                 to="/roadmap"
-                className="px-12 py-5 bg-cyan-primary text-black text-lg font-black uppercase tracking-widest rounded-full hover:bg-cyan-light transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_50px_rgba(0,255,255,0.3)]"
+                className="px-8 py-4 bg-white/5 border border-white/10 text-white text-base font-black uppercase tracking-widest rounded-full hover:bg-white/10 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+              >
+                View Roadmap
+              </Link>
+              <a 
+                href="https://chat.whatsapp.com/DZeU9JBL9pW9B0tRbGgL5u"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-10 py-4 bg-cyan-primary text-black text-base font-black uppercase tracking-widest rounded-full hover:bg-cyan-light transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_50px_rgba(0,255,255,0.3)]"
               >
                 Enroll Now <ArrowRight size={20} />
-              </Link>
+              </a>
             </div>
           </motion.div>
 
