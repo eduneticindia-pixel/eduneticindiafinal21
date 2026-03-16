@@ -16,6 +16,13 @@ export const AboutUs = () => {
       image: "https://i.ibb.co/tPwM34f2/Gautam-Miyani.png",
       linkedin: "https://in.linkedin.com/in/gautam-miyani-2b8142368",
       insta: "https://www.instagram.com/foundxgautam/"
+    },
+    {
+      name: "VEDANT TIWARI",
+      role: "CTO",
+      image: "https://i.ibb.co/gbMP1rNp/rupesh-profile.png",
+      linkedin: "https://www.linkedin.com/in/programmervedant/",
+      insta: "https://www.instagram.com/itsvedant.online/"
     }
   ];
 
@@ -144,7 +151,7 @@ export const AboutUs = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-60" />
                   
                   {/* Social Overlay */}
-                  <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
+                  <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 transition-all duration-500">
                     <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center text-white hover:bg-cyan-primary hover:text-black transition-all">
                       <Linkedin size={18} />
                     </a>
