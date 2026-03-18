@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, X } from "lucide-react";
+import { Instagram, Facebook, Twitter } from "lucide-react";
 import { TricolorIndia } from "./Common";
 
 const LOGO_URL = "https://i.ibb.co/GvRqYYDY/BGR-LOGO-EDIN.png";
