@@ -28,7 +28,7 @@ import {
 import React, { useState } from "react";
 
 const LOGO_URL = "https://i.ibb.co/GvRqYYDY/BGR-LOGO-EDIN.png";
-const CAMPUS_CONTROL_BANNER = "https://i.ibb.co/gMFhx7Db/Chat-GPT-Image-Mar-1-2026-03-08-53-PM.png";
+const CAMPUS_CONTROL_BANNER = "https://i.ibb.co/zhLh4YcP/Screenshot-2026-03-18-184054.png";
 
 const Hero = () => {
   return (
