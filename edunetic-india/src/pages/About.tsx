@@ -1,9 +1,11 @@
 import { motion } from "motion/react";
-import { Linkedin, Instagram } from "lucide-react";
+import { Linkedin, Instagram, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const AboutUs = () => {
   const team = [
     {
+      id: "ruthvik-mishra",
       name: "RUTHVIK MISHRA",
       role: "FOUNDER AND CEO",
       image: "https://i.ibb.co/GQR1PWXr/Ruthvik-Mishra.jpg",
@@ -11,6 +13,7 @@ export const AboutUs = () => {
       insta: "https://www.instagram.com/ruthvikspeaks/"
     },
     {
+      id: "gautam-miyani",
       name: "GAUTAM MIYANI",
       role: "CO FOUNDER AND CMO",
       image: "https://i.ibb.co/tPwM34f2/Gautam-Miyani.png",
@@ -18,6 +21,7 @@ export const AboutUs = () => {
       insta: "https://www.instagram.com/foundxgautam/"
     },
     {
+      id: "vedant-tiwari",
       name: "VEDANT TIWARI",
       role: "CTO",
       image: "https://i.ibb.co/gbMP1rNp/rupesh-profile.png",
@@ -141,25 +145,34 @@ export const AboutUs = () => {
                 transition={{ delay: i * 0.1, duration: 0.8 }}
                 className="group relative w-full max-w-[300px]"
               >
-                <div className="relative aspect-[3/4] rounded-[2.5rem] overflow-hidden mb-6 border border-white/10 group-hover:border-cyan-primary/40 transition-all duration-700 shadow-2xl">
-                  <img 
-                    src={member.image} 
-                    alt={member.name} 
-                    className="w-full h-full object-cover object-top transition-all duration-1000 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-60" />
-                  
-                  {/* Social Overlay */}
-                  <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 transition-all duration-500">
-                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center text-white hover:bg-cyan-primary hover:text-black transition-all">
-                      <Linkedin size={18} />
-                    </a>
-                    <a href={member.insta} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center text-white hover:bg-cyan-primary hover:text-black transition-all">
-                      <Instagram size={18} />
-                    </a>
+                <Link to={`/team/${member.id}`} className="block">
+                  <div className="relative aspect-[3/4] rounded-[2.5rem] overflow-hidden mb-6 border border-white/10 group-hover:border-cyan-primary/40 transition-all duration-700 shadow-2xl">
+                    <img 
+                      src={member.image} 
+                      alt={member.name} 
+                      className="w-full h-full object-cover object-top transition-all duration-1000 group-hover:scale-105"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-60" />
+                    
+                    {/* View Info Overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-black/40 backdrop-blur-[2px]">
+                      <div className="px-6 py-2 rounded-full bg-cyan-primary text-black font-black uppercase tracking-widest text-[10px] flex items-center gap-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                        View Info <ArrowRight size={14} />
+                      </div>
+                    </div>
+
+                    {/* Social Overlay (Small icons at bottom) */}
+                    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 transition-all duration-500 z-20">
+                      <div className="w-10 h-10 rounded-full glass flex items-center justify-center text-white hover:bg-cyan-primary hover:text-black transition-all">
+                        <Linkedin size={18} />
+                      </div>
+                      <div className="w-10 h-10 rounded-full glass flex items-center justify-center text-white hover:bg-cyan-primary hover:text-black transition-all">
+                        <Instagram size={18} />
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </Link>
                 
                 <div className="text-center space-y-1">
                   <h4 className="text-xl font-display font-black text-white uppercase tracking-tight group-hover:text-cyan-primary transition-colors duration-500">
