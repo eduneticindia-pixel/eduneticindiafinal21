@@ -14,7 +14,6 @@ import { AboutUs } from "./pages/About";
 import { EcosystemSection } from "./pages/Ecosystem";
 import { ContactPage } from "./pages/Contact";
 import { RoadmapPage } from "./pages/Roadmap";
-import { TeamMember } from "./pages/TeamMember";
 
 export default function App() {
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
@@ -32,7 +31,6 @@ export default function App() {
             <Route path="/ecosystem" element={<EcosystemSection />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/roadmap" element={<RoadmapPage />} />
-            <Route path="/team/:id" element={<TeamMember />} />
           </Routes>
         </main>
 
