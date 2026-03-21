@@ -78,19 +78,15 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-start gap-4">
               <Link 
                 to="/roadmap"
-                className="px-8 py-4 bg-white/5 border border-white/10 text-white text-base font-black uppercase tracking-widest rounded-full hover:bg-white/10 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+                className="px-8 py-4 bg-cyan-primary text-black text-base font-black uppercase tracking-widest rounded-full hover:bg-cyan-light transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(38,208,188,0.3)]"
               >
                 View Roadmap
               </Link>
-              <a 
-                href="https://chat.whatsapp.com/DZeU9JBL9pW9B0tRbGgL5u"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-10 py-4 bg-cyan-primary text-black text-base font-black uppercase tracking-widest rounded-full hover:bg-cyan-light transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
-              >
-                Enroll Now <ArrowRight size={20} />
-              </a>
+              <div className="px-8 py-4 bg-white/5 border border-white/10 text-zinc-500 text-sm font-black uppercase tracking-widest rounded-full flex items-center justify-center gap-2 cursor-not-allowed">
+                Enrollment Closed <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
+              </div>
             </div>
+            <p className="mt-4 text-zinc-500 text-[10px] font-bold uppercase tracking-widest">Fix-a-thon has officially started. Stay tuned for the next cohort!</p>
           </motion.div>
 
           <motion.div
