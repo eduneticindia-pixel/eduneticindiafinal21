@@ -204,76 +204,8 @@ export const RoadmapPage = () => {
               </div>
 
               <div className="w-full md:w-auto">
-                <a 
-                  href="https://chat.whatsapp.com/DZeU9JBL9pW9B0tRbGgL5u" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-full md:w-auto px-12 py-6 bg-cyan-primary text-black font-black uppercase tracking-widest rounded-2xl hover:bg-cyan-light transition-all transform hover:scale-105 flex items-center justify-center gap-3"
-                >
-                  Enroll Now <ArrowRight size={20} />
-                </a>
-              </div>
-            </div>
-          </motion.div>
-        </section>
-
-        {/* Mentor Section */}
-        <section className="mt-40 max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="space-y-4"
-            >
-              <div className="inline-flex items-center gap-4 px-6 py-2 rounded-full bg-white/5 border border-white/10">
-                <span className="w-2 h-2 rounded-full bg-cyan-primary animate-pulse" />
-                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-cyan-primary">Meet Your Guide</span>
-              </div>
-              <h2 className="text-4xl md:text-7xl font-display font-black text-white uppercase tracking-tighter">
-                The <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-primary to-blue-500">Mentor</span>
-              </h2>
-            </motion.div>
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="relative group"
-          >
-            <div className="absolute inset-0 bg-cyan-primary/10 blur-[120px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-            <div className="relative glass p-8 md:p-16 rounded-[3rem] md:rounded-[4rem] border-white/5 overflow-hidden">
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div className="relative aspect-square rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl">
-                  <img 
-                    src="https://i.ibb.co/RkdQ3XwN/Whats-App-Image-2026-03-17-at-4-26-17-PM.jpg" 
-                    alt="Shivam Tiwari" 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                </div>
-                
-                <div className="space-y-8">
-                  <div className="space-y-4">
-                    <h3 className="text-4xl md:text-6xl font-display font-black text-white uppercase tracking-tighter leading-none">
-                      Shivam <br />
-                      <span className="text-cyan-primary">Tiwari</span>
-                    </h3>
-                    <div className="inline-flex px-4 py-1.5 rounded-full bg-cyan-primary/10 border border-cyan-primary/20 text-cyan-primary text-xs font-black uppercase tracking-widest">
-                      Founder & CEO, RESKOOLx
-                    </div>
-                  </div>
-                  
-                  <p className="text-zinc-400 text-lg leading-relaxed font-medium italic">
-                    "Our mission is to bridge the gap between traditional education and the demands of the 21st century. Through Campus Control, we're empowering students to master the tools that will define the future."
-                  </p>
-                  
-                  <div className="flex items-center gap-6">
-                    <div className="h-px flex-1 bg-white/10" />
-                    <div className="text-[10px] font-black uppercase tracking-[0.4em] text-zinc-600">Visionary Leader</div>
-                  </div>
+                <div className="px-10 py-4 bg-white/5 border border-white/10 text-zinc-500 text-sm font-black uppercase tracking-widest rounded-2xl flex items-center justify-center gap-2 cursor-not-allowed">
+                  Enrollment Closed <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
                 </div>
               </div>
             </div>
